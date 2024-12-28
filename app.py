@@ -2,6 +2,7 @@ import streamlit as st
 import numpy as np
 import tensorflow as tf
 from tensorflow.keras.preprocessing import image
+from tensorflow.keras.models import load_model
 from tensorflow.keras import layers, models
 from tensorflow.keras.datasets import mnist
 # Load the MNIST dataset
