@@ -41,6 +41,7 @@ if uploaded_file is not None:
     img_array = image.img_to_array(img) / 255.0  # Normalize the image
     img_array = np.expand_dims(img_array, axis=0)  # Add batch dimension
 if st.button('Predict'):
+    st.image(img)
     predictions = model.predict(img_array)
     predicted_class = np.argmax(predictions, axis=1)
     st.write(f'The predicted class is: {predicted_class[0]}')
