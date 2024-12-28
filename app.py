@@ -19,6 +19,7 @@ if uploaded_file is not None:
 
     if st.button('Predict'):
         try:
+            st.image(img)
             predictions = model.predict(img_array)
             predicted_class = np.argmax(predictions, axis=1)
             st.write(f'The predicted class is: {predicted_class[0]}')
