@@ -22,6 +22,6 @@ if uploaded_file is not None:
             st.image(img)
             predictions = model.predict(img_array)
             predicted_class = np.argmax(predictions, axis=1)
-            st.write(f'The predicted class is: {predicted_class[0]}')
+            st.write(f'{predicted_class[0]}')
         except Exception as e:
             st.write(f'Error during prediction: {e}')
