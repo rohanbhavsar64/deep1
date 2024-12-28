@@ -6,7 +6,7 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras import layers, models
 from tensorflow.keras.datasets import mnist
 # Load the MNIST dataset
-model = load_model(r'C:\Users\SMART COMPUTER\Desktop\my_model.h5') 
+model = load_model('my_model.h5') 
 
 st.title('Deep Learning Model Prediction')
 st.write('Upload an image to get predictions from the model.')
