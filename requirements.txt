@@ -1,5 +1,7 @@
 streamlit
 tensorflow
 numpy
-faster_whisper
 torch
+faster-whisper
+scipy
+
