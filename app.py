@@ -7,7 +7,6 @@ st.write('Upload an image to get predictions from the model.')
 uploaded_file = st.file_uploader("Choose an video...")
 import os
 import time
-import warnings
 import torch
 from faster_whisper import WhisperModel
 
@@ -16,7 +15,6 @@ def initialize_model(model_size="large"):
     Initialize the Whisper model.
     Returns the loaded model and the device used.
     """
-    warnings.filterwarnings("ignore")
     device = "cuda" if torch.cuda.is_available() else "cpu"
     print(f"Using device: {device}")
 
