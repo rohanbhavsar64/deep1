@@ -1,7 +1,6 @@
 import streamlit as st
 import numpy as np
-# Load the MNIST dataset
-model = load_model('my_model.h5') 
+
 
 st.title('Deep Learning Model Prediction')
 st.write('Upload an image to get predictions from the model.')
