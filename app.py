@@ -46,7 +46,7 @@ def transcribe_and_translate(model, audio_file):
     print(f"Process completed in {process_time:.2f} seconds.")
     
     return {"transcription": transcription, "language": info.language}
-
+    
 if __name__ == "__main__":
     # Specify the audio file
     audio_file = "/content/WIN_20240730_19_25_14_Pro.mp4"
