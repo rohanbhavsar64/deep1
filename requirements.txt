@@ -1,7 +1,6 @@
 streamlit
 os
 time
-warnings
 torch
 faster-whisper
 
