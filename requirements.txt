@@ -1,6 +1,7 @@
-time
 streamlit
-numpy
+os
+time
+warnings
 torch
 faster-whisper
 
